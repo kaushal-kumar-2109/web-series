@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    min-height:2cm;
+    height: 2cm;
+    background-color: white;
+    display: flex;
+    margin-top: 0;
+    padding: 20px;
+    border-bottom: double;
+    border-width: 10px;
+    border-bottom-right-radius: 50%;
+    border-color: black;
+    width: 100%;
+    position:fixed;
+}
+.main img{
+    height: 100px;
+    width: 100px;
+    border-width: 2px;
+    border-color: black;
+    border-style:groove;
+}
+h1{
+    background: transparent;
+    color: black;
+    font-family: cursive;
+}
+@media(width<=417px) {
+    *{
+        background-color: black;
+        margin: 0;
+        padding: 0;
+    }
+    .mainsmall{
+    height: 20px;
+    min-height: 20px;
+    background-color: white;
+    display: flex;
+    padding: 20px;
+    border-bottom: double;
+    border-width: 10px;
+    border-bottom-right-radius: 50%;
+    border-color: black;
+    width: 100%;
+    position:fixed;
+    }
+    .mainsmall img{
+    height: 50px;
+    width: 50px;
+    border-width: 2px;
+    border-color: black;
+    border-style:groove;
+    }
+    .name{
+    background: transparent;
+    color: black;
+    font-family: cursive;
+    font-size: 20px;
+    }
+}
+
+.nav{
+    background:transparent;
+    height:10cm;
+    margin-top: 2cm;
+    position: fixed;
+    width:3cm;
+}
+.commonbut{
+    background-color:blue;
+    height: 1cm;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 2cm;
+    border-top-right-radius: 20px;
+    border-width: 4px;
+    border-color:white;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-style: groove;
+    margin-top: 3cm;
+    position:fixed;
+}
+.commonbut p{
+    background:transparent;
+}
+.catagory{
+    margin-top:5cm;
+}
+.feedback{
+    margin-top: 7cm;
+}
+.commonbut:hover{
+    width: 2.5cm;
+    background-color: rgb(57, 57, 176);
+}
+.contain{
+   
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    width:100%;
+}
+.movie{
+    height: 3cm;
+    width: 5cm;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 3cm;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-width: 2px;
+    border-style: groove;
+    border-color: white;
+    justify-content: space-between;
+}
+.movie:hover{
+    height: 2.6cm;
+    width: 4.6cm;
+}
+.moviename{
+    height: 1cm;
+    width: 5cm;
+    border-width: 2px;
+    border-style: groove;
+    border-color: white;
+    margin-top: 3cm;
+    color: white;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+@media(width<=417px) {
+    .contain{
+        width: 417px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .commonbut{
+        background-color:blue;
+        height: o.5cm;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width: 1.3cm;
+        border-top-right-radius: 20px;
+        border-width: 4px;
+        border-color:white;
+        border-top-width: 0;
+        border-left-width: 0;
+        border-style: groove;
+        margin-top: 3cm;
+        position:fixed;
+    }
+    .commonbut p{
+    background:transparent;
+    font-size: 10px;
+    }
+    .catagory{
+        margin-top:5cm;
+    }
+    .feedback{
+        margin-top: 7cm;
+    }
+    .commonbut:hover{
+        width: 2.5cm;
+        background-color: rgb(57, 57, 176);
+    }
+    .movie{
+        height: 2cm;
+        width: 3.5cm;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 3cm;
+        background-color: white;
+        border-width: 2px;
+        border-style: groove;
+        border-color: white;
+        justify-content: space-between;
+    }
+    .movie:hover{
+        height: 1.6cm;
+        width: 3cm;
+    }
+    .moviename{
+        height: 0.5cm;
+        width: 3.5cm;
+        border-width: 2px;
+        border-style: groove;
+        border-color: white;
+        margin-top: 3cm;
+        color: white;
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+}
+.without{
+    width: 0.5cm;
+}
+.without p{
+    background:transparent;
+    color: black;
+    font-size:0.3px;
+}
+.suboption{
+    margin-top: 8cm;
+    width: 2.5cm;
+     background-color:rgb(198, 172, 172);
+}
+.suboption p{
+    background-color: black;
+    border-width: 2px;
+    border-color:white;
+    border-style: groove;
+    color:white;
+    margin-left: 4px;
+}
+.up{
+    height: 0.1px;
+    width: 0.1px;
+    overflow: hidden;
+    color: black;
+    background-color: black;
+}
+.down{
+    margin-top: 0;
+    height:11cm ;
+    width: 5cm;
+    background-color:rgb(238, 200, 129);
+    border-width: 2px;
+    border-style: groove;
+    border-color: white;
+    color: white;
+    z-index: 1;
+    position: fixed;
+}
+.moviename img{
+    height: 0.7cm;
+}
+
+.animation{
+    height: 0px;
+    width: 0px;
+    position:fixed;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    animation-delay: 10s;
+    animation: motion;
+    animation-duration: 8s;
+    animation-iteration-count: initial;
+    overflow: hidden;
+}
+.animation h1{
+    height: 0px;
+    width: 0px;
+    margin-top: 5cm;
+    animation: motion2;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+}
+@keyframes motion2 {
+    0%{
+        margin-top: 7.5cm;
+        color: blue;
+    }
+    25%{
+        margin-top: 6cm;
+        color: rgb(8, 159, 235);
+    }
+    50%{
+        margin-top: 4.5cm;
+        color: rgb(10, 184, 160);
+    }
+    75%{
+        margin-top: 3cm;
+        color: rgb(21, 201, 93);
+    }
+    100%{
+        margin-top: 1.5cm;
+        color: rgb(126, 245, 46);
+    }
+}
+
+@keyframes motion {
+    0%{
+        height: 100%;
+        width: 100%;
+        background-image: url(https://github.com/kaushal-kumar-2109/photos/blob/main/wepik-export-20240331091153sFZw.jpeg?raw=true);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    25%{
+        background-image: url(https://github.com/kaushal-kumar-2109/photos/blob/main/wepik-export-20240331091153sFZw.jpeg?raw=true);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50%{
+        background-image: url(https://github.com/kaushal-kumar-2109/photos/blob/main/wepik-export-20240331091153sFZw.jpeg?raw=true);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75%{
+        background-image: url(https://github.com/kaushal-kumar-2109/photos/blob/main/wepik-export-20240331091153sFZw.jpeg?raw=true);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        height: 0;
+        background-image:url(https://github.com/kaushal-kumar-2109/photos/blob/main/wepik-export-20240331091153sFZw.jpeg?raw=true) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 0;
+        overflow: hidden;
+    }
+}
+</style>
+<body>
+</body>
+<div class="main  mainsmall">
+    <img src="https://github.com/kaushal-kumar-2109/photos/blob/main/depositphotos_430643724-stock-illustration-letter-logo-colorful-splash-background.jpg?raw=true">
+    <h1 class="name" style="margin-left: 25px;">Filmanimal..tv</h1>
+</div>
+
+<div class="animation">
+    <h1>WELCOME</h1>
+</div>
+
+
+<div class="nav">
+    <div class="commonbut home"><p class="tag">Home</p></div>
+    <a href="https://6607a1ff773f52a7555ea28f--inspiring-lily-50a879.netlify.app/"style="background: transparent;"><div class="commonbut catagory"><p class="tag">Feedback</p></div></a>
+</div>
+<div class="contain">
+
+  
+    <div class="movie" style="background-image: url();">
+        <div class="moviename">
+            <p>All of us dead and the other name </p>
+        </div>
+        <div class="moviename" style="margin-top: 0cm;">
+            <img src="https://github.com/kaushal-kumar-2109/photos/blob/main/icons8-up-50.png?raw=true" style="margin-right: 2px;" id="up0" onclick="up0()">
+            <p>Parts :</p>
+            <img src="https://github.com/kaushal-kumar-2109/photos/blob/main/icons8-down-50.png?raw=true" style="margin-left: 2px;" id="down0"  onclick="down0()">
+        </div>
+        <div class="up" id="allparts0">
+            <p>seasion 1 :-- part 1</p><br>
+            <p>seasion 1 :-- part 2</p><br>
+            <p>seasion 1 :-- part 4</p><br>
+            <p>seasion 1 :-- part 5</p><br>
+            <p>seasion 1 :-- part 6</p><br>
+            <p>seasion 1 :-- part 7</p><br>
+            <p>seasion 1 :-- part 8</p><br>
+            <p>seasion 1 :-- part 9</p><br>
+            <p>seasion 1 :-- part 10</p><br>
+            <p>seasion 1 :-- part 11</p><br>
+            <p>seasion 1 :-- part 12</p><br>
+        </div>
+    </div>
+
+<script src="java.js"></script>
+</html>
